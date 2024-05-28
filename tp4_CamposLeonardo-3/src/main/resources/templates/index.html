@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Bootstrap</title>
+    <link th:rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <!-- Header -->
+	<header class="bg-light text-center py-4 d-flex flex-column flex-md-row align-items-center">
+	    <div>
+	        <img src="https://fi.unju.edu.ar/images/fi-logo.png" alt="logo de la facultad de ingenieria" style="height: 100%;">
+	    </div>
+		<div class="mx-auto">
+		       <h1 class="h3 mb-0">Facultad de Ingeniería - UNJu</h1>
+		       <p class="mb-0">Tu eslogan aquí</p>
+		   </div>
+	</header>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Inicio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="https://www.unju.edu.ar/historia.html">Acerca de</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.fi.unju.edu.ar/17-carreras.html">Carreras</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://noticias.unju.edu.ar/">Noticias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.unju.edu.ar/telefonos_internos.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección principal -->
+    <div class="container flex-grow-1 mt-4">
+        <div class="row">
+            <main class="col-md-8">
+				<section>
+				            <h2>Bienvenidos a la Facultad de Ingeniería</h2>
+				            <p>Ofrecemos una educación de excelencia en diversas áreas del conocimiento.</p>
+				        </section>
+				        
+				        <!-- Seccion sobre la facultad -->
+				        <section>
+				            <h2>Sobre la Facultad de Ingeniería</h2>
+				            <p>
+				                La Facultad de Ingeniería de la Universidad Nacional de Jujuy (UNJu) es una institución reconocida por su 
+				                excelencia en la formación de ingenieros en diversas disciplinas. Nuestro objetivo es preparar profesionales 
+				                altamente capacitados, con sólidos valores éticos y compromiso social, que contribuyan al desarrollo tecnológico 
+				                y sostenible de la región y del país. Ofrecemos programas de grado y posgrado en áreas como ingeniería civil, 
+				                eléctrica, mecánica, industrial y más.
+				            </p>
+				        </section>
+				        
+				        <!-- Sección de Noticias -->
+				        <section>
+				            <h2>Noticias recientes</h2>
+				            <div class="list-group">
+				                <a href="#" class="list-group-item list-group-item-action">
+				                    <h5 class="mb-1">Conferencia Internacional de Ingeniería 2024</h5>
+				                    <p class="mb-1">La Facultad de Ingeniería de la UNJu organizará la Conferencia Internacional de Ingeniería 
+				                    2024, donde se discutirán los últimos avances en la investigación y tecnología.</p>
+				                    <small>28 de mayo de 2024</small>
+				                </a>
+				                <a href="#" class="list-group-item list-group-item-action">
+				                    <h5 class="mb-1">Nuevo Laboratorio de Robótica</h5>
+				                    <p class="mb-1">Se ha inaugurado un nuevo laboratorio de robótica con tecnología de punta para apoyar la 
+				                    investigación y el aprendizaje de nuestros estudiantes.</p>
+				                    <small>15 de abril de 2024</small>
+				                </a>
+				                <a href="#" class="list-group-item list-group-item-action">
+				                    <h5 class="mb-1">Ganadores del Concurso de Innovación 2024</h5>
+				                    <p class="mb-1">Felicitamos a los ganadores del Concurso de Innovación 2024, quienes presentaron proyectos 
+				                    revolucionarios en energía renovable.</p>
+				                    <small>5 de marzo de 2024</small>
+				                </a>
+				            </div>
+				        </section>
+            </main>
+            <aside class="col-md-4 bg-light">
+					<div class="list-group">
+					  <a href="https://www.fi.unju.edu.ar/secretarias/sec-academica/calendario-academico.html" class="list-group-item list-group-item-action">Calendario Academico</a>
+					  <a href="https://virtual.unju.edu.ar/bibliotecas/" class="list-group-item list-group-item-action">Biblioteca</a>
+					  <a href="https://virtual.unju.edu.ar/course/index.php?categoryid=42" class="list-group-item list-group-item-action">Aula Virtual</a>  
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white text-center py-3 mt-auto">
+        <p>Direccion: Ing. Mario Italo Palanca 10, San Salvador de Jujuy</p>
+        <p>Teléfono: (388)422-1587</p>
+        <p>Email: info@fi.unju.edu.ar</p>
+        <p>&copy; 2024 Facultad de Jujuy. Todos los derechos reservados.</p>
+    </footer>
+
+    <script type="text/javascript" th:src="@{/webjars/bootstrap/js/bootstrap.bundle.min.js}"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
