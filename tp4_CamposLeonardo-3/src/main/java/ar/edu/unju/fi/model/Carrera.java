@@ -7,7 +7,7 @@ public class Carrera {
     private String estado;
 
    public Carrera() {
-	// TODO Auto-generated constructor stub
+	
 }
 
 public Carrera(String codigo, String nombre, int cantidadAnios, String estado) {

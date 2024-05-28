@@ -13,7 +13,7 @@ public class Alumno {
     private String lu;
 
     public Alumno() {
-		// TODO Auto-generated constructor stub
+		
 	}
 
 	public Alumno(String dni, String nombre, String apellido, String email, String telefono, LocalDate fechaNacimiento,
